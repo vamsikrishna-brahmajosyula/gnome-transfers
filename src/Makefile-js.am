@@ -1,0 +1,6 @@
+jsdir = $(pkgdatadir)/js/
+dist_js_DATA = \
+	main.js
+
+CLEANFILES += \
+    $(BUILT_SOURCES)
