@@ -1,5 +1,6 @@
 const Gtk = imports.gi.Gtk;
-const Gdk = imports.gi.Gdk;
+
+const GtkClutter = imports.gi.GtkClutter;
 
 const Gettext = imports.gettext;
  
@@ -7,11 +8,7 @@ const Gettext = imports.gettext;
 
 function start() {
     
-    let provider = new Gtk.CssProvider();
-    Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(),
-                                             provider,
-                                             600);
-    
+    GtkClutter.init(null,null)
     var w = new Gtk.Window ({title: "Gnome Transfers"});
     w.show ();
 
