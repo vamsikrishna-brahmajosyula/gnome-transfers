@@ -6,8 +6,8 @@ dist_js_DATA = \
 	global.js \
 	embed.js \
 	sidebar.js \
-	mainToolbar.js \
-	windowMode.js
+	mainToolbar.js 
+
 
 CLEANFILES += \
     $(BUILT_SOURCES)
