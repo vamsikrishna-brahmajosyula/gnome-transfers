@@ -1,9 +1,6 @@
 const DBus = imports.dbus;
 const Lang = imports.lang;
 const Gettext = imports.gettext;
-
-const GtkClutter = imports.gi.GtkClutter;
-
 const Gdk = imports.gi.Gdk;
 const Gio = imports.gi.Gio;
 
