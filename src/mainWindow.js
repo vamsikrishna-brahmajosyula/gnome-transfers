@@ -9,7 +9,7 @@ const Mainloop = imports.mainloop;
 const Embed = imports.embed;
 const Global = imports.global;
 const Sidebar = imports.sidebar;
-const WindowMode = imports.windowMode;
+
 
 const _ = imports.gettext.gettext;
 
@@ -25,8 +25,6 @@ MainWindow.prototype = {
         this.window = new Gtk.Window({ type: Gtk.WindowType.TOPLEVEL,
                                        window_position: Gtk.WindowPosition.CENTER,
                                        title: _("Transfers") });
-
-        Global.modeController.setWindowMode(WindowMode.WindowMode.OVERVIEW);
 
         this.window.set_size_request(_WINDOW_DEFAULT_WIDTH, _WINDOW_DEFAULT_HEIGHT);
         this.window.maximize();

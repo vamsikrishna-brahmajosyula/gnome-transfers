@@ -9,7 +9,7 @@ const GLib = imports.gi.GLib;
 
 const MainWindow = imports.mainWindow;
 const Global = imports.global;
-const WindowMode = imports.windowMode;
+
 const GtkClutter = imports.gi.GtkClutter;
 
 function Application() {
@@ -20,7 +20,6 @@ Application.prototype = {
     _init: function() {
 	GtkClutter.init(null,null);
 	Global.application = this;
-	Global.modeController = new WindowMode.ModeController();	
 	this._mainWindow = new MainWindow.MainWindow();
 	this.activate();	
     },
