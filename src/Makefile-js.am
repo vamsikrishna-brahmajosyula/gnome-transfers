@@ -1,6 +1,15 @@
 jsdir = $(pkgdatadir)/js/
 dist_js_DATA = \
-	main.js
+	main.js \	
+	application.js \
+	mainWindow.js \
+	global.js \
+	embed.js \
+	sidebar.js \
+	mainToolbar.js \
+	windowMode.js
 
 CLEANFILES += \
     $(BUILT_SOURCES)
+
+
