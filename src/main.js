@@ -2,7 +2,7 @@ const Gtk = imports.gi.Gtk;
 const Gdk = imports.gi.Gdk;
 
 const Gettext = imports.gettext;
-const STYLE_DIR_PATH = 
+ 
 
 
 function start() {
